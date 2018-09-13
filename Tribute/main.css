@@ -1,0 +1,238 @@
+body, html, #main{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 2vw;
+}
+#img-div{
+   position: relative;
+   color: #E2E8E8;
+  
+}
+#image{
+    width: 100%;
+    z-index: -1;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    z-index: 1000;
+    animation-name: overlay;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+#title{
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    z-index: 1001;
+    font-size: 6vw;
+    opacity: 0;
+    animation-name: title;
+    animation-delay: 1.8s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+  
+}
+#img-caption{
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1001; 
+    font-size: 3vw;
+    font-weight: 300;
+    opacity: 0;
+    animation-name: caption;
+    animation-delay: 1.8s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+
+   
+}
+
+#tribute-info{
+    background-color: #919E9E;
+    color: #E2E8E8;
+    padding: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/*-----TIMELINE------*/
+
+
+#timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6.75px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #919E9E;
+    
+}
+
+#timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 35px;
+    background: inherit;
+    border-radius: 50%;
+    
+  }
+#timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: #B1C1C0;
+    color: #fff;
+  }
+
+#timeline ul li div::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  #timeline ul li:nth-child(odd) div {
+    left: 45px;
+  }
+  
+  #timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #B1C1C0 transparent transparent;
+  }
+  
+  #timeline ul li:nth-child(even) div {
+    left: -439px;
+  }
+  
+  #timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #B1C1C0;
+  }  
+  time{
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  #read-more{
+      text-align: center;
+      padding: 20px;
+      color: #B1C1C0;
+      font-size: 18px;
+      font-weight: bold;
+  }
+
+  #read-more a{
+      text-decoration: none;
+      color: #919E9E;
+      font-weight: bold;
+    }   
+
+
+
+/*---ANIMATIONS----*/
+@keyframes overlay{
+    0%{
+        opacity: 0;
+    }
+    100%{   
+        opacity: 1;
+    }
+}
+
+@keyframes title{
+    0%{
+        top: -1000px;
+        opacity: 0;
+    }
+    100%{
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes caption{
+    0%{
+        top: -1100px;
+        opacity: 0;
+    }
+    100%{
+        top: 63%;
+        opacity: 1;
+    }
+}
+
+
+
+@media all and (max-width: 900px) { 
+   
+    #timeline ul li div {
+        width: 250px;
+    }
+    #timeline ul li:nth-child(even) div {
+    left: -289px; 
+    }
+
+
+}
+@media all and (max-width: 600px) { 
+      #timeline ul li {
+        margin-left: 20px;
+      }
+       
+     #timeline ul li div {
+        width: 250px;
+      }
+       
+      #timeline ul li:nth-child(even) div {
+        left: 45px;
+      }
+       
+      #timeline ul li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #B1C1C0 transparent transparent;
+      }
+}
+
+ 
+
+ @media all and (max-width: 400px){
+
+    #tribute-info{
+        font-size: 3.5vw;
+    }
+ }
