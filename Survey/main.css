@@ -1,0 +1,275 @@
+
+body, h1, .row{
+    background-color: #7D9896;
+    color: #FAFAFA;
+}
+
+.container, .form-container{
+    background-color: #FAFAFA;
+    color: #0B0A07;
+}
+
+.form-group{
+    margin-bottom: 25px;
+}
+
+.form-control:focus{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  
+}
+
+
+#title, #description{
+    text-align: center;
+}
+
+#title{
+    margin: 40px 0;
+}
+
+#description{
+    font-size: 20px;
+}
+
+.form-container{
+    border: 10px solid #0B0A07;
+    padding: 30px;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="number"]{
+   border: none;
+   box-shadow: none;
+   border-radius: 0;
+   border-bottom: 3px solid #0B0A07;
+   padding-left: 10px;
+   background-color: #FAFAFA;
+
+}
+.form-group-select{
+    position: relative;
+    height: 47.5px;
+    background: #FAFAFA;
+} 
+
+
+
+/*--SELECT ICON ----*/
+.form-group-select:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    right: 10px;
+    bottom: 0;
+    margin: auto;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #FAFAFA transparent transparent transparent;
+    pointer-events: none;
+}
+
+/*--SELECT ICON BACKGROUND ----*/
+.form-group-select:before{
+    width: 30px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    background:#345E5B;
+    content: '';
+    pointer-events: none;
+}
+
+#dropdown, #dropdown-2{
+    font-size: 14px;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    padding-right: 35px;
+    padding-left: 10px;
+    border: 3px solid #0B0A07;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+
+#dropdown:-moz-focusring,
+#dropdown-2:-moz-focusring  {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+#dropdown::-ms-expand,
+#dropdown-2::-ms-expand {
+    display: none;
+}
+
+
+/* 
+    CUSTOM CHECKBOXES AND RADIOBUTTONS
+*/
+
+
+/* Checkboxes */
+
+
+/* Container */
+.checkbox-container{
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-container label{
+    padding-left: 25px;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #0B0A07;
+    background-color: #FAFAFA;
+}
+
+    
+
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #345E5B;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-container .checkmark:after {
+    left: 4px;
+    top: -1px;
+    width: 5px;
+    height: 12px;
+    border: solid #FAFAFA;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .checkbox label, .radio-inline label{
+      padding-left: 25px;
+  }
+
+  /* Radiobuttons */
+
+.radio-container{
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.radio-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.radio-checkmark{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 2px solid #0B0A07;
+    background-color: #FAFAFA;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.radio-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+ /* When the checkbox is checked, add a blue background */
+ .radio-container input:checked ~ .radio-checkmark {
+    background-color: #FAFAFA;
+  }
+  
+/* Show the checkmark when checked */
+.radio-container input:checked ~ .radio-checkmark:after {
+    display: block;
+}
+
+/* Style the indicator */
+.radio-container .radio-checkmark:after {
+    left: 1px;
+    top: 1px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 3px solid #345E5B;
+}
+
+.radio-inline label{
+    font-weight: normal;
+}
+
+#textarea{
+    border: 3px solid #0B0A07;
+    resize: none;
+    background-color: #FAFAFA;
+}
+
+.btn-survey{
+    background-color: #345E5B;
+    color: #FAFAFA;
+}
+
+.btn-survey:hover{
+    color: #eee;
+}
