@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top" id="nav-bar">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img id="header-img" src="http://i938.photobucket.com/albums/ad226/javaklay/LOGO_zpsfqnjsk5a.png" alt="">
+                    </a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="nav-link" href="#service">Services</a></li>
+                        <li><a class="nav-link" href="#about-us">About Us</a></li>
+                        <li><a class="nav-link" href="#programs">Programs</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav> <!--- Navbar end --->
+    </header> <!--/#header-->
+    <main class="main">
+        <section id="hero">
+            <div id="video-bg">
+                <video loop muted autoplay poster="https://images.unsplash.com/photo-1536744243983-844fbac7b244?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=29cb66528b1d5b55355cf08b0bf9eabb&auto=format&fit=crop&w=1544&q=80" id="video">
+                    <source src="./img/coding.mp4" type="video/mp4">
+                 </video>
+            </div>
+            <div class="wrapper">
+                <h1>
+                   Design. Code. Create.
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" name="email" type="email" placeholder="Enter Email Address" required>
+                    <input type="submit" id="submit" class="btn btn-custom" value="Get Started">
+                 </form>
+            </div>
+        </section>
+        <section id="service" class="section">
+            <h2>What we provide</h2>
+            <div class="section-features">
+                <div class="feature">
+                        <i class="fas fa-code curriculum"></i>
+                        <h3>Adaptive Curriculum</h3>
+                        <p>Technology changes and evolves rapidly. As a result our curriculum will adapt to tech industry standards</p>
+                </div>
+                <div class="feature ">
+                        <i class="fas fa-users community"></i>
+                        <h3>Community</h3>
+                        <p>We encourage teamwork and community at are bootcamp.</p>
+                </div>
+                <div class="feature">
+                        <i class="fas fa-user-alt mentor"></i>
+                        <h3>Mentorship</h3>
+                        <p>We provide mentors and career coaching to help you achieve your goals</p>
+                </div>
+            </div>
+        </section>
+        <section id="about-us" class="section">
+            <h2>About us</h2>
+            <div id="about">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis tempus molestie. Pellentesque quis augue vitae elit finibus commodo. Aliquam vel vehicula eros, vel imperdiet ipsum. Nulla vehicula tortor non tortor sollicitudin facilisis. Phasellus ultrices eget ex sed auctor. Fusce id diam risus. Integer et dignissim risus.
+                </p>
+                <div class="call-to-action">
+                    <div class="register">
+                        <form >
+                            <button class="btn btn-custom">Get Started</button>
+                        </form>
+                    </div>
+             </div>
+            </div>
+        </section>
+        <section id="programs" class="section">
+                <h2>Programs</h2>
+                <div class="section-features">
+                    <div class="service">
+                            <div class="icon-service">
+                                <i class="fab fa-html5 html"></i>
+                                <i class="fab fa-css3-alt css"></i>
+                                <i class="fab fa-js-square javascript"></i>
+                            </div>
+                            <div class="description">
+                                <h3>Web Development</h3>
+                                <p>Learn how to build interactive websites and powerful web applications. With the most popular fullstack language JavaScript, along with the technology that is the foundation of websites, HTML and CSS</p>
+                            </div>
+                            <button class="btn btn-custom btn-service">Learn More</button>
+                    </div>
+                    <div class="service">
+                            <div class="icon-service">
+                                    <i class="fab fa-android android"></i>
+                                    <i class="fab fa-apple apple"></i>
+                                    <i class="fab fa-windows windows"></i>
+                            </div>
+                            <div class="description">
+                                <h3>Mobile Development</h3>
+                                <p>
+                                    Learn to build beautiful and amazing cross-platform native applications for iOS, Android, Windows and more.
+                                </p>
+                            </div>
+                            <button class="btn btn-custom btn-service">Learn More</button>
+                    </div>
+                    <div class="service">
+                            <div class="icon-service">
+                                    <i class="fas fa-pen pen"></i>
+                                    <i class="fas fa-ruler ruler"></i>
+                                    <i class="fas fa-drafting-compass compass"></i>
+                            </div>
+                            <div class="description">
+                                <h3>Design</h3>
+                                <p>A comprehensive design program built to make you the most competitive candidate.</p>
+                            </div>
+                           <button class="btn btn-custom btn-service">Learn More</button>
+                    </div>
+                </div>
+        </section>
+        <section id="get-in-touch" class="section get-in-touch">
+            <h2>Get Started </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="call-to-action">
+                <div class="register">
+                    <form action="https://www.freecodecamp.com/email-submit" >
+                            <input type="text" placeholder="Enter Email Address">
+                            <button class="btn btn-custom">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+   <footer id="footer">
+        <p>
+            Codesign Academy &copy;2018
+        </p>
+   </footer>
+
+
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- Bootstrap JavaScript  -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

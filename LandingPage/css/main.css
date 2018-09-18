@@ -1,0 +1,446 @@
+/* 
+
+  DEVELOPER: KLAVEN JONES
+
+
+*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:400,500,700');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 50px;
+    font-family: 'Lato' sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h1,h2,h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+p{
+    font-size: 20px;
+}
+
+/* HEADER */
+
+
+
+#header{
+    background: black;
+}
+
+#header-img{
+    position: relative;
+    width: 150px;
+    height: auto;
+    top: -24px;
+}
+
+.navbar-custom{
+    background: #2F4858;
+    padding: 25px 15px 18px;
+    color: white;
+}
+
+.btn-custom,
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all .5s;
+
+}
+
+
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: #F26419;
+}
+
+
+.navbar .navbar-toggle{
+    border: 1px solid rgb(34, 52, 63)
+}
+
+
+.navbar .navbar-toggle .icon-bar{
+    background-color: rgb(34, 52, 63);
+}
+
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:active,
+.navbar .navbar-toggle:focus
+{
+    background-color:#33658A;
+}
+
+/* BUTTONS */
+
+
+
+.btn-custom{
+    background-color: #F26419;
+    color: white;
+}
+
+.btn-custom:hover{
+    background-color: rgba(222,80, 5, 1);
+    color: rgba(255,255,255,.9);
+}
+
+/* HERO image and video*/
+
+
+#hero{
+    position: relative;
+    background: black;
+    color: white;
+    min-height: 400px;
+    text-align: center;
+}
+
+#video-bg{
+    filter: opacity(50%) grayscale(20%);
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#video{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.wrapper{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0;
+    max-width: 900px;
+    margin: 0 auto;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    padding: 4em;
+    line-height: 4;
+}
+
+.wrapper h1,
+.wrapper p{
+    margin-bottom: 30px;
+}
+
+
+.wrapper h1{
+    font-size: 64px;
+}
+
+
+
+
+#form input[type="email"]{
+    height: 40px;
+    border: none;
+    width: 35%;
+    padding: 5px 10px;
+    color: black;
+}
+
+#form input[type="submit"]{
+    width: 20%;
+    height: 40px;
+    border: none;
+    border-radius: 0;
+}
+
+#email{
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+/* SECTION */
+
+.section{
+    background-color: #949494;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.section h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.section-features{
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/* ABOUT */
+
+#about-us{
+    padding: 4em;
+    text-align: center;
+    background-color: #2F4858;
+}
+
+#about p{
+    width: 60%;
+    margin: 5px auto 30px;
+}
+
+
+
+/* FEATURES */
+
+
+.feature{
+    color: black;
+    width: 275px;
+    min-height: 275px;
+    padding: 50px 5px;
+    text-align: center;
+
+}
+
+.feature h2{
+    font-size: 18px;
+}
+
+.feature i {
+    font-size: 60px;
+    margin: 10px 0;
+    background-color: #F26419;
+    color: white;
+    border-radius: 50%;
+    padding: 40px;
+}
+
+.feature p{
+    font-size: 14px;
+    font-weight: 300px
+}
+
+/* SERVICE CARDS */
+
+.service{
+    position: relative;
+    width: 300px;
+    height: 375px;
+    padding: 20px 30px;
+    margin: 20px 0;
+    background: white;
+    box-shadow: 1px 1px 20px 1px rgba(0,0,0,.15);
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+  
+}
+.service .icon-service {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.service .icon-service i{
+    font-size: 42px;
+    margin: 0 10px;
+}
+
+.service button{
+    border-radius: 0;
+}
+
+
+#service{
+    background-color: #fafafa;
+    color: black;
+}
+
+
+
+/* PROGRAMS */
+
+#programs{
+    background-color: #fafafa;
+    color: black;
+}
+
+
+.css{
+    color: royalblue;
+}
+
+.html{
+    color: orange;
+}
+
+.javascript{
+    color: gold;
+}
+
+.android{
+    color: forestgreen;
+}
+.apple{
+    color: silver;
+}
+.windows{
+    color: navy;
+}
+.pen{
+    color: goldenrod;
+}
+.ruler{
+    color: burlywood;
+}
+.compass{
+    color: slategrey;
+}
+.service h2{
+    font-size: 18px;
+}
+.service p{
+    font-size: 14px;
+
+}
+
+.description{
+    min-height: 200px;
+}
+
+
+
+/* CALL TO ACTION BOTTOM */
+
+
+.get-in-touch{
+    text-align: center;
+}
+
+.call-to-action{
+    width: 100%;
+    padding: 20px;
+}
+
+.register{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.register form{
+    width: 100%;
+    text-align: center;
+}
+
+.register input[type="text"]{
+    height: 40px;
+    border: none;
+    width: 30%;
+    padding: 5px 10px;
+    color: black;
+}
+
+.register button{
+    width: 20%;
+    height: 40px;
+    border: none;
+    border-radius: 0;
+
+}
+
+/* FOOTER */
+
+
+#footer{
+    padding: 50px 2px;
+    background-color: #2F4858;
+    color: white;
+    width: 100%;
+    text-align: center;
+   
+}
+
+
+#footer p{
+    font-size: 14px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px){
+    .section-features{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (max-width: 680px){
+    #video{
+        width: auto;
+        height: 100%;
+    }
+    
+    #form input[type="email"],
+    .register input[type="text"]{
+        margin-bottom: 20px;
+       
+    }
+    
+    #about p,
+    #form input[type="email"],
+    .register input[type="text"],
+    #form input[type="submit"],
+    .register button{
+        width: 100%;
+    
+    }
+
+    .wrapper{
+        line-height: 2;
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    .wrapper{
+        height: 650px;
+    }
+}
