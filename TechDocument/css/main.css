@@ -1,0 +1,159 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700|Roboto+Mono');
+
+body{
+   
+    font-family: 'Roboto', sans-serif;
+    background-color: #FDFFFC;
+    font-size: 18px;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Header Tags */
+
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Navbar */
+#navbar{
+    display:  grid;
+    grid-template-rows: 100px repeat(10, 50px);
+    
+}
+
+/* Header of Navbar */
+#navbar header h1{
+    padding: 5px 20px;
+    text-align: center;
+}
+
+#navbar header{
+    border-bottom: 1px solid black;
+}
+
+
+#navbar a{
+    text-decoration: none;
+    color: black;
+    padding: 15px 20px;
+    border-bottom: 1px solid black;
+    transition: all .3s;
+
+}
+
+#navbar a:hover{
+    background: #2593BD;
+    color: white;
+}
+
+
+
+/* Main Document */
+#main-doc{
+    grid-column-start: 2;
+    padding: 2px 20px;
+    line-height: 1.8;
+}
+
+
+#main-doc a{
+    text-decoration: none;
+    color: #2593BD;
+    font-weight: bold;
+    transition: all .3s;
+}
+#main-doc a:hover{
+    color:rgb(26, 94, 121);
+}
+
+/* Markdown */
+
+code{
+    background: #e8e9e9;
+    padding: 2px;
+    color: #fa5e42;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.markdown{
+    background: #201e2f;
+    border-left: 6px solid #2593BD;
+    color: white;
+    padding: 20px;
+}
+
+.markdown code{
+    white-space: pre-line;
+    background: none;
+    color: white;
+}
+
+/* JavaScript Font Colors */
+.js-purple{
+    color:#b3ccff;
+}
+.js-teal{
+    color: #83fff5;
+}
+.js-comment{
+    color: #939598;
+}
+
+.js-yellow{
+    color: #ffe083;
+}
+
+.js-orange{
+    color: #ff8973;
+
+}
+
+
+/* TRANSITIONS */
+
+
+/* Media Queries */
+
+/* Laptops */
+
+@media only screen and (min-width: 900px){
+
+}
+
+
+/* Tablets */
+@media only screen and (min-width: 850px){
+    
+    /* Will Create a Grid Container */
+    #container{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-gap: 20px;
+        overflow-x: hidden;
+        
+    }
+    
+    /* Navigation Bar - Will be Fixed to the Left. */
+    #navbar{
+        position: fixed;
+        width: 280px;
+    }
+
+    /* Header Navbar */
+    #navbar header h1{
+        text-align: left;
+    }
+
+    #main-doc{
+        padding: 5px 35px;
+    }
+}
