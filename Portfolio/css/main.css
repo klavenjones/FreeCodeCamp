@@ -1,0 +1,406 @@
+/* Mobile */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: black;
+ 
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Class */
+
+/* Navbar */
+#navbar{
+    position: fixed;
+    top: 0;
+}
+.navbar {
+  padding-bottom: 15px;
+  width: 100%;
+  background: white;
+  color: black;
+  z-index: 1000;
+  box-shadow: 0 1px 30px rgba(0,0,0,.05);
+}
+.navbar ul{
+    background-color:  rgba(0, 0, 255, 1);
+}
+.logo {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+#nav {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  list-style-type: none;
+  background: inherit;
+  color: black;
+  /* This will hide the menu to enable a drop down toggle */
+  max-height: 0;
+  opacity: 0;
+  transition: max-height .2s ease-out;
+}
+.nav-show {
+    /* When the toggle is pressed this will bring the navigation to view  */
+  max-height: 200px;
+  opacity: 1;
+
+}
+
+#nav li {
+  text-align: center;
+  margin: 15px auto;
+  font-size: 20px;
+  
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  color: black;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Tablets and Desktops */
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 60px;
+  }
+  
+
+  #nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 35px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    opacity: 1;
+    z-index: 1001;
+  }
+
+  #nav li {
+    margin-left: 30px;
+    color: black;
+  }
+
+  /* HIDE TOGGLE */
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+
+
+
+/* Container - Content */
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+@media screen and (min-width: 575px){
+    /* Container small Screens */
+    .container{
+        max-width: 520px;
+    }
+}
+@media screen and (min-width: 768px){
+    /* Container Medium Screens */
+    .container{
+        max-width: 700px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    /* Container Large Screens */
+    .container{
+        max-width: 940px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    /* Container X-Large Screens */
+    .container{
+        max-width: 1100px;
+    }
+}
+
+
+/* WELCOME SECTION */
+
+#welcome-section{
+    padding-top: 18rem;
+    padding-bottom: 13rem;
+    height: 100vh;
+    width: 100vw;
+}
+
+.greeting{
+    position: fixed;
+    text-align: left;
+    opacity: 100;
+    z-index: -1000;
+    transition: all .1s;
+}
+
+.greeting-container{
+    position: fixed;
+    z-index: -1000;
+    padding-left: 20px;
+}
+
+
+#welcome-section h1{
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+
+
+#welcome-section p{
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 575px){
+    /* Font size Small Screens */
+  
+    #welcome-section h1{
+        font-size: 3.5rem;
+    }
+
+    #welcome-section p{
+        font-size: 1rem;
+    }
+    
+    #welcome-section{
+        padding-left: 60px;
+    }
+}
+@media screen and (min-width: 768px){
+    /* Font size Medium Screens */
+    
+    #welcome-section h1{
+        font-size: 3.75rem;
+    }
+    
+    #welcome-section p{
+        font-size: 1.25rem;
+    }
+    
+    #welcome-section{
+        padding-left: 80px;
+    }
+ 
+
+}
+
+@media screen and (min-width: 992px){
+    /* Font size Large Screens */
+    
+    #welcome-section h1{
+        font-size: 4rem;
+    }
+    
+     #welcome-section p{
+        font-size: 1.50rem;
+    }
+    
+    #welcome-section{
+        padding-left: 100px;
+    }
+  
+}
+
+@media screen and (min-width: 1200px){
+    /* Font Size X-Large Screens */
+
+       
+    #welcome-section h1{
+        font-size: 5em;
+    }
+       
+    #welcome-section p{
+        font-size: 1.75em;
+    }
+       
+    #welcome-section{
+        padding-left: 150px;
+    }
+ 
+}
+
+
+/* Projects */
+
+
+/* Project container - Mobile */
+.project-container{
+    background: white;
+    padding: 20px; 
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: 300px;
+    grid-gap: 20px;
+    
+}
+
+/* Project container  - Tablets and desktops  */
+
+@media screen and (min-width: 768px){
+    .project-container{
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-auto-rows: 400px;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+   
+}
+
+.project-tile{
+    filter: brightness(95%);
+    background: gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 1px rgba(0,0,0,.15);
+}
+
+.project-tile .caption{
+   
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    filter: opacity(0%);
+    background: black;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    transition: all .5s;
+}
+
+.project-tile .caption h1{
+    position: relative;
+    top: -100px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all .2s;
+   
+}
+@media screen and (min-width: 768px){
+    .project-tile.caption h1{
+        max-width: 70%;
+    }
+}
+
+.project-tile .icons{
+    min-width: 200px;
+    max-width: 50%;
+    position: relative;
+    bottom: -100px;
+    margin: 15px auto;
+    font-size: 40px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    transition: all .2s;
+
+}
+
+.project-tile .icons a{
+    text-decoration: none;
+    color: white;
+}
+
+.project-tile:hover > .caption{
+    filter: opacity(90%);
+
+}
+
+.project-tile:hover > .caption h1{
+    filter: opacity(100%);
+    top: 0;
+}
+
+.project-tile:hover > .caption .icons{
+    opacity: 1;
+    bottom: 0;
+}
+
+.project-tile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Contact */
+
+.contact{
+    padding: 100px 20px;
+    min-height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact .icons{
+    margin: 50px auto;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+   
+    
+}
+.contact .icons i{
+    font-size: 40px; 
+}
+
+
+
+/* FOOTER */
+ footer{
+     
+     color: white;
+     background: #333;
+     padding: 20px;
+ }
